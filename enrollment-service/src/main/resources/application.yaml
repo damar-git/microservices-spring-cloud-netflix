@@ -1,8 +1,10 @@
 spring:
   application:
-    name: enrollment-api
+    name: enrollment-service
+
 server:
   port: 8181
+
 eureka:
   client:
     serviceUrl:
