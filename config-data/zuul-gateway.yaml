@@ -1,0 +1,18 @@
+server:
+  port: 8762
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8080/eureka}
+
+#Spring boot actuator, exposing endpoints
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

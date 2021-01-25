@@ -1,9 +1,7 @@
 spring:
   application:
     name: bookshop-service
-server:
-  port: 8383
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
+  cloud:
+    config:
+      uri: http://localhost:8888
+      enabled: true

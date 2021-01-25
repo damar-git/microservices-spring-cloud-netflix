@@ -1,9 +1,7 @@
 spring:
   application:
     name: customer-service
-server:
-  port: 8282
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
+  cloud:
+    config:
+      uri: http://localhost:8888
+      enabled: true
