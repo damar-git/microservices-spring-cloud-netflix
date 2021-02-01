@@ -1,15 +1,6 @@
 server:
   port: 8888
 
-#spring:
-#  cloud:
-#    config:
-#      server:
-#        git:
-##          uri: https://github.com/damar-git/microservices_.git
-#          uri: file://${user.home}/GitRepositories/microservices_/config-data
-#        search-paths: config-data
-
 spring:
   profiles:
     active: native

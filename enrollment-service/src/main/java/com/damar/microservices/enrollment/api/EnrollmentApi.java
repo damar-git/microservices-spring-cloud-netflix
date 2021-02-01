@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/enrollment-api")
 public interface EnrollmentApi {
 
-    @ApiOperation(value = "Signup to platform")
-    @GetMapping(value = "/signup/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Customer signup to platform")
+    @GetMapping(value = "/customer/{username}/signup", produces = MediaType.APPLICATION_JSON_VALUE)
     ResponseEntity<String> signUp(@ApiParam(value = "the customer username", required = true)
-                                           @PathVariable(value = "username") String customerId);
+                                           @PathVariable(value = "username") String username);
 }
