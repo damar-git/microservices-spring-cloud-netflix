@@ -14,11 +14,12 @@ public class EnrollmentController implements EnrollmentApi {
     @Value("${server.port}")
     private String serverPortNumber;
 
+
     @Override
-    public ResponseEntity<String> signUp(String username) {
-        log.info("signUp, username {},  server port: {}", username, serverPortNumber);
+    public ResponseEntity<String> getHttpPort() {
+        log.info("HTTP Server Port: {}", serverPortNumber);
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(String.format("GET SignUp, server port: %s", serverPortNumber));
+                .body(String.format("[Enrollment-API] HTTP Server Port: %s", serverPortNumber));
     }
 }

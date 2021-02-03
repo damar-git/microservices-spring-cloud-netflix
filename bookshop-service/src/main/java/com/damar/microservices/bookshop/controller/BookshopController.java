@@ -14,11 +14,12 @@ public class BookshopController implements BookshopApi {
     @Value("${server.port}")
     private String serverPortNumber;
 
+
     @Override
-    public ResponseEntity<String> getBookById(Long bookId) {
-        log.info("signUp, bookId {},  server port: {}", bookId, serverPortNumber);
+    public ResponseEntity<String> getHttpPort() {
+        log.info("HTTP Server Port: {}", serverPortNumber);
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(String.format("GET Book, server port: %s", serverPortNumber));
+                .body(String.format("[Bookshop-API] HTTP Server Port: %s", serverPortNumber));
     }
 }

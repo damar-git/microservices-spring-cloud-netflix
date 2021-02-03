@@ -14,13 +14,12 @@ public class CustomerController implements CustomerApi {
     @Value("${server.port}")
     private String serverPortNumber;
 
+
     @Override
-    public ResponseEntity<String> getCustomerById(Long customerId) {
-        log.info("getCustomerById, customerId {}, server port: {}", customerId,
-                serverPortNumber);
+    public ResponseEntity<String> getHttpPort() {
+        log.info("HTTP Server Port: {}", serverPortNumber);
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(String.format("GET Customer, server port: %s", serverPortNumber));
+                .body(String.format("[Customer-API] HTTP Server Port: %s", serverPortNumber));
     }
-
 }
