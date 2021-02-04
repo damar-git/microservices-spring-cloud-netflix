@@ -12,4 +12,4 @@ spring:
         enabled: true
       server:
         native:
-          searchLocations: file:///${user.home}/GitRepositories/microservices_/config-data
+          searchLocations: file:///${user.home}/git-repositories/microservices_/config-data

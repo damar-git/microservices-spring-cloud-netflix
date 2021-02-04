@@ -32,6 +32,6 @@ cd zipkin
 java -jar ./zipkin-server/target/zipkin-server-*exec.jar
 ```
 
-Zipkin up and running at: http://localhost:9411
+Zipkin running at: http://localhost:9411
 
 Source: https://zipkin.io/pages/quickstart.html

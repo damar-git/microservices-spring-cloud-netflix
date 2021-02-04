@@ -1,6 +1,7 @@
 package com.damar.microservices.enrollment.api;
 
 import com.damar.microservices.enrollment.configuration.SwaggerConfig;
+import com.damar.microservices.enrollment.model.EnrollmentResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.MediaType;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/enrollment-api")
 public interface EnrollmentApi {
 
-    @ApiOperation(value = "Retrieve server listening port")
+    @ApiOperation(value = "Retrieve service listening port")
     @GetMapping(value = "/server/port", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<String> getHttpPort();
+    ResponseEntity<EnrollmentResponse> getHttpPort();
 }

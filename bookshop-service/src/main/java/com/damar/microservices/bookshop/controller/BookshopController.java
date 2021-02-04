@@ -1,6 +1,7 @@
 package com.damar.microservices.bookshop.controller;
 
 import com.damar.microservices.bookshop.api.BookshopApi;
+import com.damar.microservices.bookshop.model.BookshopResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -12,14 +13,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class BookshopController implements BookshopApi {
 
     @Value("${server.port}")
-    private String serverPortNumber;
+    private Integer serverPortNumber;
 
 
     @Override
-    public ResponseEntity<String> getHttpPort() {
+    public ResponseEntity<BookshopResponse> getHttpPort() {
         log.info("HTTP Server Port: {}", serverPortNumber);
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(String.format("[Bookshop-API] HTTP Server Port: %s", serverPortNumber));
+                .body(BookshopResponse
+                        .builder()
+                        .service("Bookshop Service")
+                        .httpPort(serverPortNumber)
+                        .build());
     }
 }

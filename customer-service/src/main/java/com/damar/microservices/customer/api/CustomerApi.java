@@ -1,6 +1,7 @@
 package com.damar.microservices.customer.api;
 
 import com.damar.microservices.customer.configuration.SwaggerConfig;
+import com.damar.microservices.customer.model.CustomerResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.MediaType;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/customer-api")
 public interface CustomerApi {
 
-    @ApiOperation(value = "Retrieve server listening port")
+    @ApiOperation(value = "Retrieve service listening port")
     @GetMapping(value = "/server/port", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<String> getHttpPort();
+    ResponseEntity<CustomerResponse> getHttpPort();
 }
