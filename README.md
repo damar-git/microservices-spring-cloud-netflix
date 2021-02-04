@@ -26,12 +26,15 @@
 * Retrieve service http listening port (call through the Zuul gateway):
 
 ```
-http://localhost:8762/enrollment-api/server/port [GET]
+http://localhost:8762/enrollment-service/enrollment-api/server/port [GET]
 ```
 
 Response
 ```
-[Enrollment-API] HTTP Server Port: 8081
+{
+    "service": "Enrollment Service",
+    "httpPort": 8081
+}
  ```
 
 ### References
