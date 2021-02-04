@@ -16,7 +16,7 @@
     * Enrollment Service running at http://localhost:8081/swagger-ui.html
     * Bookshop Service running at http://localhost:8082/swagger-ui.html
     * Customer Service running at http://localhost:8083/swagger-ui.html
-- Sleuth
+- Sleuth (enhanced logging)
 - Zipkin (distribuited tracing system, guidelines at /zipkin folder, running at: http://localhost:9411) 
 
 ### Endpoints:
