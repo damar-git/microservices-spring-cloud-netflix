@@ -2,23 +2,23 @@
 
 ## This project is based on spring-cloud-netflix components for a microservices architecture.
 
-![architecture](https://github.com/damar-git/microservices_/blob/develop/asset/architecture.png "architecture")
+![architecture](https://github.com/damar-git/microservices_/blob/main/asset/architecture.png "architecture")
 
 ### Components:
 
-- Config-Server (configuration server, first service to start, running at: http://localhost:8888)
-    * Update searchLocations property (resources/application.yaml) to your local path
-- Eureka (discovery service, running at: http://localhost:8080)
-- Zuul (API gateway, running at http://localhost:8762)
-    * Ribbon (load balancer, round robin strategy)
-- Microservices (Swagger documentation)
-    * Enrollment Service running at http://localhost:8081/swagger-ui.html
-    * Bookshop Service running at http://localhost:8082/swagger-ui.html
-    * Customer Service running at http://localhost:8083/swagger-ui.html
-- Sleuth (enhanced logging)
-- Zipkin (distribuited tracing system, guidelines in /zipkin folder, running at: http://localhost:9411) 
+- __Config-Server__ (configuration server, first service to start, running at: http://localhost:8888)
+    * [ ! ] Update __searchLocations__ property (resources/application.yaml) to your local path
+- __Eureka__ (discovery service, running at: http://localhost:8080)
+- __Zuul__ (API gateway, running at http://localhost:8762)
+    * __Ribbon__ (load balancer, round robin strategy)
+- __Microservices__ (Swagger documentation)
+    * __Enrollment Service__ running at http://localhost:8081/swagger-ui.html
+    * __Bookshop Service__ running at http://localhost:8082/swagger-ui.html
+    * __Customer Service__ running at http://localhost:8083/swagger-ui.html
+- __Sleuth__ (enhanced logging)
+- __Zipkin__ (distribuited tracing system, guidelines in /zipkin folder, running at: http://localhost:9411) 
 
-### Endpoints:
+## Endpoints:
 
 (Enrollment API)
 
@@ -36,7 +36,7 @@ Response
 }
  ```
 
-### References
+## References
 
 - https://spring.io/projects/spring-cloud-netflix
 - https://spring.io/guides
