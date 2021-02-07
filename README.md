@@ -2,7 +2,7 @@
 
 ## This project is based on spring-cloud-netflix components for a microservices architecture.
 
-
+![architecture](https://github.com/damar-git/microservices_/blob/develop/asset/architecture.png "architecture")
 
 ### Components:
 
