@@ -4,7 +4,7 @@
 
 ![architecture](https://github.com/damar-git/microservices_/blob/main/asset/architecture.png "architecture")
 
-### Components:
+## Components:
 
 - __Config-Server__ (configuration server, first service to start, running at: http://localhost:8888)
     * [ ! ] Update __searchLocations__ property (resources/application.yaml) to your local path
