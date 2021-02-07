@@ -2,8 +2,6 @@
 
 ## This project is based on spring-cloud-netflix components for a microservices architecture.
 
-### Visual architecture:
-
 
 
 ### Components:
@@ -12,12 +10,13 @@
     * Update searchLocations property (resources/application.yaml) to your local path
 - Eureka (discovery service, running at: http://localhost:8080)
 - Zuul (API gateway, running at http://localhost:8762)
-- Microservices (Swagger documentation):
+    * Ribbon (load balancer, round robin strategy)
+- Microservices (Swagger documentation)
     * Enrollment Service running at http://localhost:8081/swagger-ui.html
     * Bookshop Service running at http://localhost:8082/swagger-ui.html
     * Customer Service running at http://localhost:8083/swagger-ui.html
 - Sleuth (enhanced logging)
-- Zipkin (distribuited tracing system, guidelines at /zipkin folder, running at: http://localhost:9411) 
+- Zipkin (distribuited tracing system, guidelines in /zipkin folder, running at: http://localhost:9411) 
 
 ### Endpoints:
 
