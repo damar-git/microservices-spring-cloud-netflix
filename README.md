@@ -36,7 +36,7 @@ Response
 }
  ```
  
-To test the Ribbon load balancing strategy (round robin as default) start a new microservice istance on a different port (let's say 8086) and the same endpoint multiple times.
+To test the Ribbon load balancing strategy (round robin as default) start a new microservice istance on a different port (let's say 8086) and call the same endpoint multiple times.
  
 As result the http port will change for each new call.
  ```
