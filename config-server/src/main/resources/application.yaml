@@ -12,4 +12,4 @@ spring:
         enabled: true
       server:
         native:
-          searchLocations: file:///${user.home}/git-repositories/microservices_/config-data
+          searchLocations: file:///${user.home}/git-repositories/microservices-spring-cloud-netflix/config-data
